@@ -1,0 +1,247 @@
+<!--index.wxml-->
+<view style="width:100%;justify-content:center;font-size:35rpx;font-weight:bold;background:linear-gradient(120deg,#1C86EE,#1C86EE)">
+    <icon type='success_no_circle'></icon>
+    <text style='color:#FFFFFF;transform:rotateZ(12deg)'> 工  </text>
+    <text style='color:#FFFFFF;transform:rotateZ(-12deg)'>业  </text>
+    <text style='color:#FFFFFF;transform:rotateZ(12deg)'>商  </text>
+    <text style='color:#FFFFFF;transform:rotateZ(-12deg)'>务  </text>
+    <text style='color:#FFFFFF;transform:rotateZ(12deg)'>动  </text>
+    <text style='color:#FFFFFF;transform:rotateZ(-12deg)'>态</text>
+</view>
+
+<!-- 分割线1 -->
+<!-- <view style="width:100%;height:4rpx;margin-top:1rpx;border-top:4rpx dashed gray"></view> -->
+
+<!-- 图片展示区 -->
+<view>
+    <view style='color:white;width:40%;height:40rpx;line-height:40rpx;justify-content:flex-start;background:linear-gradient(70deg,#1C86EE,white)'>
+        商 务 活 动 篇：
+    </view>
+</view>
+<swiper autoplay indicator-dots style="height:300rpx;width:100%;background:gray;filter:blur(0.4px)">
+    <swiper-item style="text-align:center" wx:for="{{url}}" bindtap='getlocation' data-e="{{url}}">
+        <image style='height:300rpx;width:80%;border-radius: 6rpx;box-shadow: 4rpx 8rpx 10rpx gray;' src="{{item}}" />
+    </swiper-item>
+</swiper>
+
+<!--商务策划篇 -->
+<view>
+    <view style='color:white;width:40%;height:40rpx;line-height:40rpx;justify-content:flex-start;background:linear-gradient(70deg,#1C86EE,white)'>
+        商 务 策 划 篇：
+    </view>
+</view>
+
+<view style="justify-content:center;text-align:center" bindtap='look'>
+    <!-- 专项商务策划 -->
+    <view style="width:136rpx;height:136rpx;background:purple;border-radius:68rpx">
+        <view style="width:120rpx;height:120rpx;background:white;margin:0 auto;line-height:120rpx;border-radius:60rpx;text-align:center;">
+            <text style='margin:0 auto;'>专项策划</text>
+        </view>
+    </view>
+</view>
+
+<!-- 分割线3 -->
+<!-- <view style="width:100%;height:4rpx;margin-top:10rpx;border-top:4rpx dashed purple"></view> -->
+
+<!--商务资料篇 -->
+<view>
+    <view style='color:white;width:40%;height:40rpx;line-height:40rpx;justify-content:flex-start;background:linear-gradient(70deg,#1C86EE,white)'>
+        商 务 资 料 篇：
+    </view>
+</view>
+
+<view style='height:160rpx;width:100%;display:flex;flex-direction:row;align-items:center;justify-content:space-around;'>
+    <!--       <code style="text-decoration:line-through;font-size:30rpx;">Interface for Doc;Approach Soon......</code>  -->
+
+    <view style='display:flex;flex-direction:column;align-items:center' bindtap='shift' data-idx="chengben" bindtap='info'>
+        <image src='/images/rat.png' style='width:108rpx;height:88rpx;'></image>
+        <text style='font-weight:bold;margin-top:8rpx'>成本测算表</text>
+        <text style='font-weight:bold;'>（需要权限）</text>
+    </view>
+    <view style='display:flex;flex-direction:column;align-items:center' bindtap='shift' data-idx="mubiao" bindtap='info'>
+        <image src='/images/bird.png' style='width:88rpx;height:88rpx'></image>
+        <text style='font-weight:bold;margin-top:8rpx'>目标责任书</text>
+        <text style='font-weight:bold;'>（需要权限）</text>
+    </view>
+    <view style='display:flex;flex-direction:column;align-items:center' bindtap='shift' data-idx="cehua" bindtap='info'>
+        <image src='/images/snake.png' style='width:88rpx;height:88rpx;'></image>
+        <text style='font-weight:bold;margin-top:8rpx'>商务策划书</text>
+        <text style='font-weight:bold;'>（需要权限）</text>
+    </view>
+    <view style='display:flex;flex-direction:column;align-items:center' bindtap='shift' data-idx="jiesuan" bindtap='info'>
+        <image src='/images/lizard.png' style='width:88rpx;height:88rpx;'></image>
+        <text style='font-weight:bold;margin-top:8rpx'>结算策划书</text>
+        <text style='font-weight:bold'>（需要权限）</text>
+    </view>
+</view>
+
+<!-- 分割线7 -->
+<!-- <view style="width:100%;height:4rpx;margin-top:10rpx;border-top:4rpx dashed gray"></view> -->
+
+<!--其他篇-->
+<view>
+    <view style='color:white;width:40%;height:40rpx;line-height:40rpx;justify-content:flex-start;background:linear-gradient(70deg,#1C86EE,white)'>
+        其 他：
+    </view>
+</view>
+<!-- 工作累了，做些有趣的事吧-->
+<view style='height:160rpx;width:100%;display:flex;flex-direction:row;margin-top:12rpx;justify-content:center'>
+    <view style='justify-content:center;line-height:160rpx'>
+        <code style="font-size:30rpx;font-weight:bold" bindtap="zaojia">这里有你需要的东西~^~</code>
+    </view>
+</view>
+
+<!-- 分割线8 实线 -->
+<view style="width:100%;height:4rpx;margin-top:10rpx;border-top:4rpx solid blue">
+</view>
+<view style='flex-direction:column;justify-content:center;'>
+    <view style="justify-content:inherit">copyright@2017-2020;Content Author Tony_Zhou</view>
+    <view style='margin-top:12rpx;justify-content:inherit'>有任何问题请联系我：
+        <contact-button>18062532701</contact-button>
+    </view>
+</view>
+<!-- 
+ <view style="width:100%;height:4rpx;margin-top:10rpx;border-top:4rpx solid blue">
+    </view>
+<view style='height:160rpx;width:100%;display:flex;flex-direction:row;margin-top:12rpx;justify-content:center'>
+  <view style='width:10%;line-height:80rpx'>专项</view>
+  <view style='text-align:center'>
+  <text style="white-space:pre-line">这里是文字不分胜负阿凡达撒疯疯癫减肥的时间啊垃圾发电量价拉法基洛夫垃圾啊老费劲了空间啊疯了范德萨封疆大吏撒酒疯来得及酸辣粉杰拉德撒酒疯垃圾堆里舒服垃圾分类收集啊浪费精力捡垃圾分类捡垃圾分类及了</text>
+  </view>
+</view>
+测试前端分割线 实线 -->
+
+<!--
+<view class="content">
+    <view style='height:160rpx;width:100%;display:flex;flex-direction:row;margin-top:12rpx;justify-content:center' data-process="{{item.ExecutorName}}" data-status="{{item.Status.name}}" data-name="{{item.Name}}" bindtap="tap" wx:for="{{data}}" data-set="{{item.FlowID}}">
+            <view style='width:10%;line-height:80rpx' wx:if="{{item.Status.name=='Aborted'}}">
+                <icon type="clear" style=""/>
+            </view>
+            <view style='width:10%;line-height:80rpx' wx:if="{{item.Status.name=='Finished'}}">
+                <icon type="success"/>
+            </view>
+            <view style='width:10%;line-height:80rpx' wx:if="{{item.Status.name=='Running'}}">
+                <icon type="waiting"/>
+            </view>
+     <view><text style="white-space:pre-line"> {{item.Name}}</text></view>
+    </view>
+</view>
+-->
+
+<!--
+ <view style="width:100%;height:4rpx;margin-top:10rpx;border-top:4rpx dashed red">
+    </view>
+<view>
+<view style='color:white;width:40%;height:40rpx;line-height:40rpx;justify-content:flex-start;background:linear-gradient(70deg,#6495ED,white)'>
+商 务 搜 索 篇：
+</view>
+</view>
+    <view style="width:100%;justify-content:center;margin-top:12rpx;height:78rpx;font-size:29rpx">
+            <input type="text" placeholder="**策划"   placeholder-style="String" bindinput="insertvalue"            style="border:1px solid gray;height:100%;width:40%;border-right:none;"/>
+           <view bindtap="search" style="width:30%;height:100%;width:39%;background:gray;border:1px solid gray;">
+           <view style='margin:0 auto;dispaly:flex;flex-direction:row;align-items:center;white-space:pre;border-left:none'><icon type='search' ></icon>  搜  索</view>
+           </view>
+    </view>
+
+     <view style="margin-top:22rpx;">
+      <text >最近搜索：</text>
+      <view style="display:flex;">
+      <view wx:for="{{recentSearch}}">
+      <view  wx:if="{{index<=1}}" data-ee="{{item}}" bindtap="history_search" style="padding-top:20rpx;padding-left:10rpx;text-decoration:underline;">
+      <button size="mini" style="border-radius:50rpx;background:#DEDEDE;color:#353535;" >{{item}}    
+        </button> 
+      </view>
+            </view>
+            </view>
+      </view>
+-->
+
+<!--
+<view style="width:100%;height:4rpx;margin-top:10rpx;border-top:4rpx dashed gray"></view>
+ 分割线4 -->
+<!--
+
+<view>
+<view style='color:white;width:40%;height:40rpx;line-height:40rpx;justify-content:flex-start;background:linear-gradient(70deg,#6495ED,white)'>
+商 务 确 权 篇：
+</view>
+</view>
+商务确权篇-->
+<!--
+<view style='height:300rpx;width:100%;margin:0 auto'>
+
+  <view style="height:300rpx;width:100%;">
+    <view style='width:50%;height:300rpx;position:relative;border-radius:22;background:radial-gradient(#c1cdc1,#ffffff)' data-ff="1" bindtap='quequan'>
+      <text style='top:40%;left:30%;position:absolute;font-weight:bold'>正在申报</text>
+    </view>
+    <view style='width:50%;height:300rpx;position:relative;border-radius:22;background:radial-gradient(#66cdaa,#ffffff)' data-ff="2" bindtap="quequan">
+      <text style='top:40%;left:30%;position:absolute;font-weight:bold'>正在走流程</text>
+    </view>
+  </view>
+</view>
+四张图片拼合而成的点击消息 -->
+<!--
+<view style='height:300rpx;width:100%;margin:0 auto'>
+
+  <view style="height:300rpx;width:100%;">
+    <view style='width:50%;height:300rpx;position:relative;border-radius:22;background:radial-gradient(#7d9ec0,#ffffff)' data-ff="3" bindtap='quequan'>
+      <text style='top:40%;left:30%;position:absolute;font-weight:bold'>已经完成</text>
+      
+    </view>
+    <view style='width:50%;height:300rpx;position:relative;border-radius:22;background:radial-gradient(#8b814c,#ffffff)' data-ff="4" bindtap='quequan'>
+      <text style='top:40%;left:30%;position:absolute;font-weight:bold'>动态更新台帐</text>
+    </view>
+  </view>
+</view>
+四张图片拼合而成的点击消息 -->
+
+<!--
+ <view style="width:100%;height:4rpx;margin-top:10rpx;border-top:4rpx dashed gray">
+    </view>
+ 分割线5 -->
+<!--
+<view>
+<view style='color:white;width:40%;height:40rpx;line-height:40rpx;justify-content:flex-start;background:linear-gradient(70deg,#6495ED,white)'>
+商 务 结 算 篇：
+</view>
+</view>
+商务结算篇-->
+<!--
+<view style='height:160rpx;width:100%;display:flex;flex-direction:row;margin-top:12rpx;justify-content:center'>
+  <view style='justify-content:center;line-height:160rpx'>
+    <code style="text-decoration:line-through;font-size:30rpx;">Interface for JieSuan;Approach Soon.......</code>
+  </view>
+</view>
+结算在这里 -->
+
+<!-- <canvas  style="width:600rpx;height:300rpx;" canvas-id="String"></canvas> -->
+
+<!-- 
+ <view style="width:100%;height:4rpx;margin-top:10rpx;border-top:4rpx dashed gray">
+    </view>
+ 分割线6 -->
+<!--
+<view>
+<view style='color:white;width:40%;height:40rpx;line-height:40rpx;justify-content:flex-start;background:linear-gradient(70deg,#6495ED,white)'>
+造 价 师 考 试：
+</view>
+</view>
+造价师考试入口-->
+<!--
+<view style='height:160rpx;width:100%;display:flex;flex-direction:row;margin-top:12rpx;justify-content:center'>
+<view style='width:80%'>
+<view style='display:flex;flex-direction:column;align-items:center' bindtap='shift' data-idx="guanli">
+<image src='/images/Venus.jpg' style='width:88rpx;height:88rpx;filter:blur(.2px)'></image>
+<text style='font-weight:bold;margin-top:8rpx'>造价管理习题</text>
+</view>
+<view style='display:flex;flex-direction:column;align-items:center' bindtap='shift' data-idx="jiliang">
+<image src='/images/Earth.jpg' style='width:88rpx;height:88rpx;filter:blur(.2px)'></image>
+<text style='font-weight:bold;margin-top:8rpx'>技术计量习题</text>
+</view>
+<view style='display:flex;flex-direction:column;align-items:center' bindtap='shift' data-idx="jijia">
+<image src='/images/Sun.jpg' style='width:88rpx;height:88rpx;filter:blur(.2px)'></image>
+<text style='font-weight:bold;margin-top:8rpx'>工程计价习题</text>
+</view>
+</view>
+</view>
+-->

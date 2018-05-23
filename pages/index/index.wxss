@@ -1,0 +1,20 @@
+/**index.wxss**/
+page{
+  background:#ffffff;
+  font-size:24rpx;
+  letter-spacing: 1.3rpx;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10rpx;
+  text-align: center;
+  overflow-x: hidden;
+  }
+ view{
+    display:flex;
+    width:100%;
+  }
+  text{
+    white-space: pre;  /**保留空格**/
+  }

@@ -1,0 +1,4 @@
+/* canvas.wxss */
+Page{
+  font-size:28rpx;
+}

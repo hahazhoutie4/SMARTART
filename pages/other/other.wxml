@@ -1,0 +1,28 @@
+<!--logs.wxml-->
+<view style="display:flex;flex-direction:row;width:100%;justify-content:center;font-size:35rpx;font-weight:bold;background:linear-gradient(120deg,red,white)">
+<icon type='success_no_circle'></icon>
+<text style='color:#FFA07A;transform:rotateZ(12deg)'> 商  </text><text style='color:#B452CD;transform:rotateZ(-12deg)'>务  </text><text style='color:#8E8E38;transform:rotateZ(12deg)'>管  </text><text style='color:#8B1A1A;transform:rotateZ(-12deg)'>理  </text><text style='color:#7CFC00;transform:rotateZ(12deg)'>手  </text><text style='color:#528B8B;transform:rotateZ(-12deg)'>册</text>
+</view>
+<view style="font-weight:bold">1、商务策划</view>
+<view style="display:block;text-indent:2em">
+<text style="text-decoration:underline">施工阶段商务策划包括的主要内容有</text>：工程概况，合同风险分析，收入成本对比分析，分包管理策划，物资管理策划，管理费策划，签证索赔策划，资金管理策划，关系协调策划，商务策划动态调整，结算策划等。
+</view>
+<view style="display:block;text-indent:2em;line-weight:150%;">
+<text style="text-decoration:underline">商务策划编制时限</text>:以项目开工为起点，特大型项目60天内，大型项目45天内，中小型项目30天内编制完成。
+</view>
+<view style="font-weight:bold">2、专项商务策划</view>
+<view style="display:block;text-index:48rpx">
+<view style="display:block;text-indent:2em;line-weight:150%;">
+<text style="text-decoration:underline">专项商务策划立项</text>：分公司部门收到项目部的立项申请后组织相关部门评审，根据申报方案判定策划的经济技术可行性，由分公司审批，公司部门备案；预计奖励超过5万元的，报公司部门和公司领导审批。
+</view>
+<view style="display:block;text-indent:2em;line-weight:150%;">
+<text style="text-decoration:underline">专项商务策划范围</text>：1）科技创效无金额条件限制，在立项时应明确是否申请科技难度系数加成；2）中型及以下项目的专项策划降本增效超过20万元；3）大型项目的专项策划降本增效超过50万元；4）特大型项目的专项策划降本增效超过100万元。
+</view>
+<view style="display:block;text-indent:2em;line-weight:150%;">
+<text style="text-decoration:underline">项目奖金申报材料</text>：包括《专项商务策划立项申报审批表》、专项商务策划、风险化解及增效测算书及相关证明资料。专项商务策划完成后申报奖励时提交《专项商务策划奖励申请审批表》。
+</view>
+<view style="display:block;text-indent:2em;line-weight:150%;">
+<text style="text-decoration:underline">专项商务策划奖励解释</text>：1)专项创效策划奖励采用超额累进计算方式（如策划效益为600万元，奖金=100*10%+200*8%+200*6%+100*5%=43万元）；难易系数、科技难度系数由项目申报，考核兑现小组核定。2)策划效益是指策划增加的净效益（或是甩项策划达到的风险转移金额），因专项商务策划实施造成的直接或间接成本增加，应在核定策划效益时扣除。3)合同暂估价重新认价、暂定材料认价部分，其净效益率需达到项目上缴比例，超过上缴部分的效益作为策划效益计算奖励。4)立项审批表中经公司/分公司技术部同意科技难度系数加成的创效活动，应在过程实施中积极总结相关经验，形成创效技术总结，在创效奖励兑现申请前报公司/分公司技术部，由公司技术部最终根据创效技术总结确定科技难度系数。
+</view>
+<image src="/images/zhuanxiang(new).png" style="width:360px;height:160px"/>
+</view>

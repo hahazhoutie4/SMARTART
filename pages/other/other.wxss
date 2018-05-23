@@ -1,0 +1,7 @@
+view{
+  font-size:24rpx;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+text{
+    white-space: pre;  /**保留空格**/
+  }

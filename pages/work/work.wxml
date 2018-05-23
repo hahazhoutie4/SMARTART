@@ -1,0 +1,21 @@
+<!--pages/work/work.wxml-->
+<view style='display:flex;flex-direction:column;align-items:center'>
+<view>{{title}}</view>
+<view style='height:90%'>
+<view style='display:flex;flex-direction:column;align-items:center'>
+<view animation="{{animationData}}"><text>对待数据，我们一向是严谨的!!!</text></view>
+<view animation="{{animationData}}"><text>至于资料，我们患得患失!!!</text></view>
+<view animation="{{animationData}}"><text>现在，从这里改变...</text></view>
+<view animation="{{animationData}}"><text>请登录...</text></view>
+</view>
+</view>
+
+<view style='flex-direction:column;align-items:center'>
+此处显示数据....
+</view>
+
+
+
+<view >数据来源：来自各大项目部身处一线的商务人员们，此致!!!</view>
+
+</view>

@@ -1,0 +1,22 @@
+<!--canvas.wxml-->
+<view style="">
+<view class="classname" style="display:flex;flex-flow:row;align-items:center;justify-content:center">专项策划<text style="text-decoration:underline;color:red">{{name}}</text>审批流程</view>
+<!-- 进度条 -->
+<view style="margin-top:22rpx;margin-bottom:7rpx">
+<progress percent="{{percent}}" show-info="true" color="{{progress_color}}" active/>
+</view>
+<view style='display:flex;flex-direction:row;align-items:center;justify-content:center'><text>文字模式</text><switch bindchange='checked'></switch><text>流程模式</text></view>
+<!-- 进度文字版本 -->
+<view wx:for="{{Entities.Data[0].ListNode}}" style="display:{{!checked?'none':'block'}}">
+<view wx:if="{{item.Tip!=undefined}}"><view>处理人:{{item.Tip.DealUsr}}</view>
+<view>处理时间:{{item.Tip.DealTime}}</view>
+<view wx:if="{{item.Tip.DealRemark!=undefined}}">处理意见:{{item.Tip.DealRemark}}</view>
+<view wx:if="{{item.Tip.DealResult!=undefined}}">处理结果:{{item.Tip.DealResult}}</view>
+</view>
+</view>
+<!-- 画布 -->
+<view style='display:{{checked?"none":"block"}}'>
+<canvas  canvas-id="1" style="width:750rpx;height:1234rpx;position:absolute;z-index:0"></canvas>
+<canvas  canvas-id="2" style="width:750rpx;height:1234rpx;position:absolute;z-index:1" bindtouchstart="start"></canvas>
+</view>
+</view>

@@ -1,0 +1,38 @@
+{
+    "pages": [
+      "pages/index/index",
+      "pages/zaojia/zaojia",
+        "pages/content/content",
+        "pages/canvas/canvas",
+        "pages/other/other",
+        "pages/map/map",
+        "pages/music/music",
+        "pages/work/work"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#1C86EE",
+        "navigationBarTitleText": "",
+        "navigationBarTextStyle": "black",
+        "navigationStyle":"default"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "商务の主页",
+                "iconPath": "images/1.png",
+                "selectedIconPath": "images/1.png"
+            },
+            {
+                "pagePath": "pages/other/other",
+                "text": "管理の制度",
+                "iconPath": "images/2.png",
+                "selectedIconPath": "images/2.png"
+            }
+        ],
+        "backgroundColor": "#EDEDED",
+        "selectedColor": "#912CEE",
+        "color": "#000000"
+    }
+}

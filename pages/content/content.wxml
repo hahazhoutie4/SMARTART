@@ -1,0 +1,38 @@
+<view style="display:flex;justify-content:center;align-items:center;flex-direction:row;">
+<view><text>所有专项策划如下:</text></view>
+</view>
+<view style="display:flex;justify-content:space-around;align-items:space-around;flex-direction:row;font-size:30rpx">
+<view style='background:linear-gradient(-90deg,#9acd32,white)'>总立项数:{{data_success}}</view>
+<view style='background:linear-gradient(-90deg,white,#9acd32)'>走流程数:{{data_run}}</view>
+</view>
+<view class="content">
+    <view style='font-size:22rpx;height:60rpx;width:100%;display:flex;flex-direction:row;margin-top:12rpx;justify-content:center' data-process="{{item.ExecutorName}}" data-status="{{item.Status.name}}" data-name="{{item.Name}}" bindtap="tap" wx:for="{{data}}" data-set="{{item.FlowID}}">
+            <view style='width:10%;background:linear-gradient(-90deg,red,white);line-height:60rpx;text-align:center' wx:if="{{item.Status.name=='Aborted'}}">
+                <icon size='11.5' type="clear" style=""/>
+            </view>
+            <view style='width:10%;background:linear-gradient(-90deg,#f39b00,white);line-height:60rpx;text-align:center' wx:if="{{item.Status.name=='Finished'}}">
+                <icon size='11.5' type="success"/>
+            </view>
+            <view style='width:10%;background:linear-gradient(-90deg,#F39B00,white);line-height:50rpx;text-align:center' wx:if="{{item.Status.name=='Running'}}">
+                <icon size='11.5' type="waiting"/>
+            </view>
+     <view style='width:90%;background:linear-gradient(90deg,#F39B00,white)'><text style="white-space:pre-line"> {{item.Name}}</text></view>
+    </view>
+</view>
+
+<!--
+<view class="content">
+    <view  style="font-size:22rpx;margin-top:22rpx;border:1px solid red;border-radius:" data-process="{{item.ExecutorName}}" data-status="{{item.Status.name}}" data-name="{{item.Name}}" bindtap="tap" wx:for="{{data}}" data-set="{{item.FlowID}}">
+            <view wx:if="{{item.Status.name=='Aborted'}}">
+                <icon type="clear" style=""/>
+            </view>
+            <view wx:if="{{item.Status.name=='Finished'}}">
+                <icon type="success"/>
+            </view>
+            <view wx:if="{{item.Status.name=='Running'}}">
+                <icon type="waiting"/>
+            </view>
+      {{item.Name}}
+    </view>
+</view>
+-->

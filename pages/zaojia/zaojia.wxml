@@ -1,0 +1,37 @@
+<!--pages/zaojia/zaojia.wxml-->
+<!-- <view style='height:80rpx;background:#1C86EE;display:flex;flex-direction:row;align-items:center'>
+  <view style='width:50%;text-align:center;height:100%;line-height:80rpx' bindtap='next'>下一题</view>
+  <view style='width:50%;text-align:center;height:100%;line-height:80rpx;background-color:#5F9EA0' bindtap='show'>提交查看答案</view>
+</view>
+<view style='display:flex;flex-direction:column;align-items:left'>
+  <view>{{question}}</view> -->
+  <!-- 分割线1 -->
+  <!-- <view style="width:100%;height:4rpx;margin-top:1rpx;border-top:4rpx dashed gray">
+  </view>
+  <view style='align-items:left'>
+    <radio-group>
+      <view wx:for="{{options}}" style='display:flex;flex-direction:row;justify-content:left;'>
+        <radio value='{{item}}'></radio>
+        <view>{{item}}</view>
+      </view>
+    </radio-group>
+  </view> -->
+  <!-- 分割线1 -->
+  <!-- <view style="width:100%;height:4rpx;margin-top:1rpx;border-top:4rpx dashed gray">
+  </view>
+  <view bindtap='showPage'>
+    <view style='display:{{show}}'>{{answer}}</view>
+    <view style='display:{{show}}'>{{answer_des}}</view>
+  </view>
+</view>
+<view wx:for='{{image}}'>
+  <image src='{{item}}' style='width:100%;height:700rpx' mode='aspectFit'></image>
+</view> -->
+<!-- canvas -->
+<canvas canvas-id='zaojia' style='width:{{width+"px"}};height:{{height+"px"}};'   disable-scroll=true
+  bindtouchstart="bindtouchstart"
+  bindtouchmove="bindtouchmove"
+  bindtouchend="bindtouchend"
+  bindtap="bindtap"
+  bindlongpress="bindlongpress"
+  />
