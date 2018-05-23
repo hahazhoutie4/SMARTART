@@ -20,7 +20,7 @@ onLoad:function(){
   var canvasid = "zaojia"
   var canvascontext = wx.createCanvasContext(canvasid)
   wx.request({
-    url: 'http://localhost:8000/static/json/zaojiashi/2017/jijia-2017-1.json',
+    url: url+'/static/json/zaojiashi/2017/jijia-2017-1.json',
     success:function(res1){
       that.setData({d:res1.data.list.examDtoList[0].content.toString()})
       console.log(res1.data.list.examDtoList[0].content)
