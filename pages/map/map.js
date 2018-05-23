@@ -18,12 +18,21 @@ Page({
     fontSize:12,
     padding:22,
     bgColor:"gray",
-    display:"BYCLICK"
+    display:"BYCLICK",
+    windowHeight:1000,
   }
   }]
   },
   onLoad: function (options) {
-  
+    var that=this
+      wx.getSystemInfo({
+        success: function(res) {
+          console.log(res.windowHeight)
+          that.setData({windowHeight:res.windowHeight});
+          },
+        fail: function(res) {},
+        complete: function(res) {},
+      })
   },
   onReady: function () {
   
