@@ -4,9 +4,7 @@ App({
    
   },
   globalData:{
-    url:"https://www.ztlovesl.com.cn/SMART/",
-    url_002:"https://www.ztlovesl.com.cn/DataJ/",
-    url_003:"http://localhost:8000/static/",
+    url:"http://localhost:8080/SLZT/",
     userInfo:null,
     zx:null,
     sb:null,
