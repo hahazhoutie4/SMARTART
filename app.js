@@ -4,7 +4,7 @@ App({
    
   },
   globalData:{
-    url:"http://localhost:8080/SLZT/",
+    url:"https://www.ztlovesl.com.cn/SLZT/",
     userInfo:null,
     zx:null,
     sb:null,

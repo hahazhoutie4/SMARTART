@@ -8,6 +8,12 @@ Page({
     data: [{ year: 2017 - 1, data: 131200.0 }, { year: 2017 - 2, data: 101200.0 }, { year: 2017 - 3, data: 91200.0 }, { year: 2017 - 4, data: 121200.0 }, { year: 2017 - 5, data: 111200.0}] //画布结算数据
       },
   onLoad: function () {
+    wx.request({
+      url: url+'imageinfor',
+      success:function(res){
+        console.log(res.data)
+      }
+    })
     wx.getSystemInfo({
       success: function (res) {
         console.log(res.windowHeight)
