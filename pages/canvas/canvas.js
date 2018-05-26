@@ -51,7 +51,7 @@ Page({
       var that=this;
       that.data.state=false;     //初始化canvas内容为空
       wx.request({
-        url: url+'content_detail?flowid='+options.id,
+        url: url+'contentdetail?flowid='+options.id,
         data:'',
         success:function(res){
           that.setData({
